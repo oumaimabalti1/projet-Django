@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'monprojet.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'oumaima.sqlite3',
     }
 }
 
@@ -129,3 +129,5 @@ MAILERS = {
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+AUTH_USER_MODEL = 'AccountApp.User'
